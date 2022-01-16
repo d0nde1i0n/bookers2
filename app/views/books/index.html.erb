@@ -1,2 +1,9 @@
-<h1>Books#index</h1>
-<p>Find me in app/views/books/index.html.erb</p>
+<!--Bookのindexページ-->
+<div class="container">
+  <div class="row">
+    <!--User info-->
+    <%= render 'users/user_info',user: @user %>
+    <!--投稿画像一覧-->
+    <%= render 'books_lists',books: @books %>
+  </div>
+</div>
