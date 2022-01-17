@@ -16,6 +16,9 @@ class ApplicationController < ActionController::Base
     root_path
   end
 
+  class ApplicationController < ActionController::Base
+    add_flash_types :success, :info, :warning, :danger
+  end
 
   protected
 
