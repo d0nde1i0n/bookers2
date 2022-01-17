@@ -18,7 +18,7 @@
       <!--通常の表示箇所-->
       <div class="form-group">
           <%= f.label :Name %><br>
-          <%= f.text_field :name %>
+          <%= f.text_field :name,class:"form-control user_name" %>
         </div>
         <div class="form-group">
           <%= f.label :Image %> <br>
@@ -26,7 +26,7 @@
         </div>
         <div class="form-group">
           <%= f.label :Intoroduction %> <br>
-          <%= f.text_area :introduction%>
+          <%= f.text_area :introduction,class:"form-control user_introduction"%>
         </div>
         <div class="form-group">
           <%= f.submit "Update User",class: "btn btn-secondary" %>
